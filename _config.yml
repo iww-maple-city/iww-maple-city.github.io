@@ -1,0 +1,61 @@
+title: Industrial Workers of the World · NYC
+email: organize@iww.nyc
+baseurl: ""
+url: "https://iww.nyc"
+description: The latest news and happenings from the NYC Industrial Workers of the World! · An injury to one is an injury to all.
+
+future: true
+
+paypal: "paypal@iww.nyc"
+
+logo: /assets/logo.png
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/social.png
+
+twitter_username: iwwnyc
+instagram_username: iwwnyc
+facebook_username: iwwnyc
+mastodon_username: iwwnyc
+github_username: iwwnyc
+keybase_username: iwwnyc
+
+social:
+  name: IWW NYC GMB
+  links:
+    - https://twitter.com/iwwnyc
+    - https://instagram.com/iwwnyc
+    - https://facebook.com/iwwnyc
+    - https://mastodon.social/@iwwnyc
+    - https://github.com/iwwnyc
+    - https://keybase.io/iwwnyc
+
+twitter:
+  username: iwwnyc
+  card: summary
+
+facebook:
+  publisher: iwwnyc
+
+markdown: kramdown
+
+kramdown:
+  parse_span_html: true
+  input: GFM
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+collections:
+  events:
+    output: true
+    path: ""
+    permalink: /events/:path/
+
+paginate: 5
+paginate_path: "/news/:num/"

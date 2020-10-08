@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<div class="home">
+    <h3 style="text-align:center;font-weight:700;font-size:25px;"><em>The IWW is a union for all workers — <a href="{{ site.baseurl }}/obu">One Big Union!</a><br>
+    Join the NYC General Membership Branch today!</em></h3>
+    <div style="text-align:center;">
+        <a href="{{ site.baseurl }}/join"><button class="large" style="margin:24px 15px 12px 15px;" ontouchstart="">Join the IWW</button></a>
+    </div><br>
+    <p style="text-align:center;">
+        <em>As long as you are a worker – not an employer – you can join the IWW. Members of other unions (except officers), students, retirees, the unemployed, the self-employed, those in informal professions, and those unable to work may also join. <a href="{{ site.baseurl }}/why-join">Learn why you should join the IWW.</a></em><br><br>
+    </p>
+    <hr style="margin:20px 0 50px 0;">
+    <h3 style="text-align:center;font-weight:700;font-size:25px;">Interested in organizing? Contact us today!</h3>
+    <div style="text-align:center;">
+        <a href="{{ site.baseurl }}/contact"><button class="large" style="margin:24px 15px 12px 15px;" ontouchstart="">Contact the IWw</button></a>
+    </div><br>
+    <p style="text-align:center;">
+        Having trouble at work? Want to organize with your coworkers against your boss? Contact the IWW today and meet with experienced IWW organizers, attend an organizer training, and, with the mentorship and guidance of other Wobblies, build a union with your fellow workers at your job and in your industry. Get in touch with us by emailing <a href="mailto:organize@iww.nyc">organize@iww.nyc</a>. Read <a href="{{ site.baseurl }}/weakening-the-dam"><em>Weakening the Dam</em></a> to get a short primer on what an organzing campaign with the IWW could look like.<br><br>
+    </p>
+    <hr style="margin:20px 0 50px 0;">
+      <p style="text-align:center;font-weight:700;font-size:22px;">The next orientation for new members will be on {{ site.data.upcoming["next_orientation_date"] }}. <a href="{{ site.data.upcoming["next_orientation_url"] }}">Details ▸</a></p>
+      <p style="text-align:center;font-size:18px;"><br>
+        We ask that that new members attend an orientation before attending branch meetings to become familiar with the structure of the branch and meeting procedure. Orientations are also great opportunities for people who are interested in the IWW to learn more about the union. View upcoming orientations on our <a href="{{ site.baseurl }}/events">events</a> page.
+      </p><br>
+    <hr style="margin:20px 0 50px 0;">
+    <p style="text-align:center;font-weight:700;font-size:22px;">IWW NYC General Membership Branch meetings are held the second Tuesday of each month from {{ site.data.upcoming["next_meeting_time"] }}.</p>
+    <p style="text-align:center;font-size:18px;"><br>
+    <em>The next meeting of the IWW NYC General Membership Branch will be on {{ site.data.upcoming["next_meeting_date"] }}. <a href="{{ site.data.upcoming["next_meeting_url"] }}">Details ▸</a></em>
+    </p><br>
+    <hr style="margin:20px 0 50px 0;">
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup" style="text-align:center;background:rgba(0,0,0,.05);padding:40px 110px 15px 110px;">
+    <form action="https://nyc.us16.list-manage.com/subscribe/post?u=b5aacdc67328813578df54304&amp;id=651ba871ed" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    	<h1 style="line-height:35px;"><strong>Subscribe to Our Newsletter</strong></h1>
+      <p style="font-weight:300;"><em>Sign up with your email address to receive our monthly newsletter with news and events concerning the New York City General Membership Branch.</em></p>
+      <div style="margin:30px 0px;" id="email-input">
+    	<input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address" style="height:20px;width:245px;padding:15px;font-size:16px;font-weight:200;margin-right:15px;max-width:60%;border:.5px solid #A9A9A9;border-radius:0px;" required>
+    <button type="submit" name="subscribe" class="newsletter" name="subscribe" id="mc-embedded-subscribe" ontouchstart="">Sign Up</button>
+  </div>
+        <p style="font-size:12px;font-weight:100;line-height:normal;">We respect your privacy. Your contact information will never be shared with any third parties. We use Mailchimp to send our newsletter; <a href="https://mailchimp.com/legal/privacy/">read their privacy policy</a>.</p>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        </div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="text-align:center;">
+     <input type="hidden" name="business" value="{{ site.paypal }}">
+     <input type="hidden" name="image_url" value="{{ site.url }}/assets/logo.png">
+     <input type="hidden" name="return" value="{{ site.url }}/thanks-for-donating">
+     <input type="hidden" name="cmd" value="_donations">
+     <input type="hidden" name="currency_code" value="USD">
+     <div style="padding-top: 20px; padding-bottom: 0;">
+      <button class="large" id="pp-donate" type="submit" name="submit" style="margin-top:12px;" ontouchstart="">Donate to the NYC GMB</button>
+     </div>
+     <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+    </form>
+
+    <script>
+        if (location.hash == "#donate") {
+         	document.getElementById('pp-donate').click();
+        }
+    </script>
+</div>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>

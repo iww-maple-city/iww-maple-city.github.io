@@ -1,0 +1,19 @@
+---
+layout: page
+title: Events
+permalink: /events/
+---
+{% for item in site.events %}
+  {% if item.date >= site.time %}
+    <a href="{{ item.url }}"><div class="date-box"><p style="font-weight:300;">{{ item.date | date: "%b" }}<br><span style="font-size:32px;">{{ item.date | date: "%e" }}</span></p></div></a>
+    <div style="padding-left:107px;margin-bottom:60px;" id="events-main-info">
+      <a href="{{ item.url }}"><h2>{{ item.title }}</h2></a>
+      <p>{{ item.date | date: "%A, %B %-d, %Y" }}
+        {%- if item.last-date -%}&nbsp;– {{ item.last-date | date: "%A, %B %-d, %Y" }}{%- endif -%}<br>
+        {{ item.time }}</p>
+    </div>
+    <br>
+  {% endif %}
+{% endfor %}
+<a href="https://calendar.google.com/calendar/embed?src=organize@iww.nyc">Subscribe to the IWW NYC GMB Google Calendar.</a><br>
+Email us at <a href="mailto:organize@iww.nyc">organize@iww.nyc</a> (<a href="{{site.baseurl}}/assets/keys/publickey.organize@iww.nyc.asc">public key</a>) to submit radical events in and around New York City to the NYC GMB Calendar.

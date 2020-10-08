@@ -1,0 +1,74 @@
+backend:
+ name: github
+ repo: IWW-NYC-GMB/iww.nyc
+  
+#backend:
+# name: test-repo
+
+display_url: https://iww.nyc
+
+logo_url: /assets/iww-netlify.png
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/uploads"
+
+collections:
+  - name: "news"
+    editor:
+      preview: false
+    label: "News"
+    label_singular: "news item"
+    folder: "news/_posts"
+#    extension: html
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "/:categories/:year/:i_month/:i_day/:slug"}
+      - {label: "Netlify", name: "netlify", widget: "hidden", default: true}
+      - {label: "Send to Mailchimp", name: "newsletter", widget: "boolean", hint: "Send this post as a Mailchimp newsletter", required: false}
+      - {label: "Body", name: "body", hint: "To format correctly, enter the markdown editor mode and delete any blank line breaks. There should be no gaps between lines of text when in the markdown editor.", widget: "markdown", buttons: ["bold", "italic", "code", "link", "heading-one", "heading-two", "heading-three", "code-block", "bulleted-list", "numbered-list"]}
+  - name: "events"
+    editor:
+      preview: false
+    label: "Events"
+    label_singular: "event"
+    folder: "_events"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "event"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "date", format: "dddd, MMMM D, YYYY"}
+      - {label: "Time", name: "time", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "upcoming"
+    label: "Upcoming Events Details"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "meeting"
+        label: "Next Meeting Settings"
+        file: "_data/upcoming.yml"
+        description: "Next Meeting Settings"
+        fields:
+          - {label: "Next Meeting Date", name: "next_meeting_date", widget: "date", format: "dddd, MMMM D, YYYY"}
+          - {label: "Meeting Time", name: "next_meeting_time", widget: "string", hint: "Example: 7 to 9 PM"}
+          - {label: "Next Meeting URL", name: "next_meeting_url", widget: "string", hint: "/events/month-year/"}
+          - {label: "Next Orientation Date", name: "next_orientation_date", widget: "hidden", format: "dddd, MMMM D, YYYY"}
+          - {label: "Orientation Time", name: "next_orientation_time", widget: "hidden", hint: "Example: 7 to 9 PM"}
+          - {label: "Next Orientation URL", name: "next_orientation_url", widget: "hidden", hint: "/events/month-year-orientation/"}
+      - name: "orientation"
+        label: "Next Orientation Settings"
+        file: "_data/upcoming.yml"
+        description: "Next Orientation Settings"
+        fields:
+          - {label: "Next Meeting Date", name: "next_meeting_date", widget: "hidden", format: "dddd, MMMM D, YYYY"}
+          - {label: "Meeting Time", name: "next_meeting_time", widget: "hidden", hint: "Example: 7 to 9 PM"}
+          - {label: "Next Meeting URL", name: "next_meeting_url", widget: "hidden", hint: "/events/month-year/"}
+          - {label: "Next Orientation Date", name: "next_orientation_date", widget: "date", format: "dddd, MMMM D, YYYY"}
+          - {label: "Orientation Time", name: "next_orientation_time", widget: "string", hint: "Example: 7 to 9 PM"}
+          - {label: "Next Orientation URL", name: "next_orientation_url", widget: "string", hint: "/events/month-year-orientation/"}
