@@ -1,8 +1,8 @@
 title: Industrial Workers of the World · Maple City
-email: 
+email: organize@iww.nyc
 baseurl: ""
-url: "https://"
-description: The latest news and happenings from the Maple City Industrial Workers of the World! · An injury to one is an injury to all.
+url: "https://iww.nyc"
+description: The latest news and happenings from the NYC Industrial Workers of the World! · An injury to one is an injury to all.
 
 future: true
 
@@ -16,17 +16,22 @@ defaults:
     values:
       image: /assets/social.png
 
-twitter_username: MCINGMB
-facebook_username: MapleCity7
-github_username: iww-maple-city
-
+twitter_username: iwwnyc
+instagram_username: iwwnyc
+facebook_username: iwwnyc
+mastodon_username: iwwnyc
+github_username: iwwnyc
+keybase_username: iwwnyc
 
 social:
-  name: IWW Maple City GMB
+  name: IWW NYC GMB
   links:
-    - https://twitter.com/MCINGMB
-    - https://facebook.com/MapleCity7
-    - https://github.com/iww-maple-city
+    - https://twitter.com/iwwnyc
+    - https://instagram.com/iwwnyc
+    - https://facebook.com/iwwnyc
+    - https://mastodon.social/@iwwnyc
+    - https://github.com/iwwnyc
+    - https://keybase.io/iwwnyc
 
 twitter:
   username: iwwnyc
