@@ -1,5 +1,5 @@
 title: Industrial Workers of the World · Maple City
-email: 
+email: IWW.MapleCity.GMB@Protonmail.com
 baseurl: ""
 url: "https://"
 description: The latest news and happenings from the Maple City Industrial Workers of the World! · An injury to one is an injury to all.
@@ -29,11 +29,11 @@ social:
     - https://github.com/iww-maple-city
 
 twitter:
-  username: iwwnyc
+  username: MCINGMB
   card: summary
 
 facebook:
-  publisher: iwwnyc
+  publisher: MapleCity7
 
 markdown: kramdown
 
