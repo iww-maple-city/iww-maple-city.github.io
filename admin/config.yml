@@ -1,11 +1,11 @@
 backend:
  name: github
- repo: iww-maple-city/iww-maple-city.github.io
+ repo: IWW-NYC-GMB/iww.nyc
   
 #backend:
 # name: test-repo
 
-display_url: https://iww-maple-city.github.io
+display_url: https://iww.nyc
 
 logo_url: /assets/iww-netlify.png
 
