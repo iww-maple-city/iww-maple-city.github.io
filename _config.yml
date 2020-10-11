@@ -17,15 +17,21 @@ defaults:
       image: /assets/social.png
 
 twitter_username: MCINGMB
+instagram_username: iwwnyc
 facebook_username: MapleCity7
+mastodon_username: iwwnyc
 github_username: iww-maple-city
+keybase_username: iwwnyc
 
 social:
   name: IWW MapleCity GMB
   links:
     - https://twitter.com/MCINGMB
+    - https://instagram.com/iwwnyc
     - https://facebook.com/MapleCity7
+    - https://mastodon.social/@iwwnyc
     - https://github.com/iww-maple-city
+    - https://keybase.io/iwwnyc
 
 twitter:
   username: MCINGMB
