@@ -2,9 +2,8 @@
 layout: none
 permalink: /.well-known/security.txt
 ---
-Contact: mailto:security@iww.nyc
-Contact: mailto:organize@iww.nyc
-Contact: https://iww.nyc/contact/
-Encryption: https://iww.nyc/assets/keys/publickey.organize@iww.nyc.asc
+Contact: mailto:IWW.MapleCity.GMB@Protonmail.com
+Contact: https://iww-maple-city.github.io/contact/
+Encryption: https://iww-maple-city.github.io/assets/keys/publickey.IWW.MapleCity.GMB@protonmail.com.asc
 Preferred-Languages: en
-Canonical: https://iww.nyc/.well-known/security.txt
+Canonical: https://iww-maple-city.github.io/.well-known/security.txt
