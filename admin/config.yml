@@ -14,7 +14,7 @@ publish_mode: editorial_workflow
 media_folder: "assets/uploads"
 
 collections:
-  - name: "blog"
+  - name: "news"
     editor:
       preview: false
     label: "News"
