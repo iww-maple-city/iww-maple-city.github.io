@@ -15,10 +15,10 @@
           <a href="{{ site.baseurl }}/gmb" class="page-link{% if page.url contains '/gmb/' or page.url == '/gdc/' or page.url == '/safer-space/' or page.url == '/rustys/' or page.url == '/bylaws/' or page.url == '/resources/' %} current{% endif %}">About</a>
           <div id="dropdown-content">
             <a href="{{ site.baseurl }}/gmb/" class="page-link{% if page.url == '/gmb/' %} current{% endif %}">General Membership Branch</a>
-            <a href="{{ site.baseurl }}/gdc/" class="page-link{% if page.url contains '/gdc/' %} current{% endif %}">General Defense Committee</a>
             <a href="{{ site.baseurl }}/safer-space/" class="page-link{% if page.url contains '/safer-space/' %} current{% endif %}">Safer Space Policy</a>
           </div>
         </div>
+	<a href="{{ site.baseurl }}/gdc/" class="page-link{% if page.url contains '/gdc/' %} current{% endif %}">GDC</a>
         <a href="{{ site.baseurl }}/news" class="page-link{% if page.url contains '/news/' %} current{% endif %}">News</a>
       </div>
       <select id="select-nav" onchange="navChange ();location = this.value;">
@@ -28,9 +28,9 @@
         <option value="{{ site.baseurl }}/events/" {% if page.url contains '/events/' %}selected{% endif %}>Events</option>
         <optgroup label="About">
           <option value="{{ site.baseurl }}/gmb/" {% if page.url contains '/gmb/' %}selected{% endif %}>General Membership Branch</option>
-          <option value="{{ site.baseurl }}/gdc/" {% if page.url contains '/gdc/' %}selected{% endif %}>General Defense Committee</option>
           <option value="{{ site.baseurl }}/safer-space/" {% if page.url contains '/safer-space/' %}selected{% endif %}>Safer Space Policy</option>
         </optgroup>
+	<option value="{{ site.baseurl }}/gdc/" {% if page.url contains '/gdc/' %}selected{% endif %}>GDC</option>
         <option value="{{ site.baseurl }}/news/" {% if page.url contains '/news/' %}selected{% endif %}>News</option>
       </select>
       <span id="current-selection"></span>
