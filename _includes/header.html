@@ -12,11 +12,13 @@
         <a href="{{ site.baseurl }}/join" class="page-link{% if page.url contains '/join/' %} current{% endif %}">Join</a>
         <a href="{{ site.baseurl }}/events" class="page-link{% if page.url contains '/events/' %} current{% endif %}">Events</a>
         <div id="dropdown">
-          <a href="{{ site.baseurl }}/gmb" class="page-link{% if page.url contains '/gmb/' or page.url == '/allies/' or page.url == '/safer-space/' or page.url == '/rustys/' or page.url == '/bylaws/' or page.url == '/resources/' %} current{% endif %}">About</a>
+          <a href="{{ site.baseurl }}/gmb" class="page-link{% if page.url contains '/gmb/' or page.url == '/allies/' or page.url == '/podcast/' or page.url == '/agitprop/' or page.url == '/safer-space/' or page.url == '/rustys/' or page.url == '/bylaws/' or page.url == '/resources/' %} current{% endif %}">About</a>
           <div id="dropdown-content">
             <a href="{{ site.baseurl }}/gmb/" class="page-link{% if page.url == '/gmb/' %} current{% endif %}">General Membership Branch</a>
             <a href="{{ site.baseurl }}/safer-space/" class="page-link{% if page.url contains '/safer-space/' %} current{% endif %}">Safer Space Policy</a>
 	    <a href="{{ site.baseurl }}/allies/" class="page-link{% if page.url contains '/allies/' %} current{% endif %}">Friends & Allies</a>
+	    <a href="{{ site.baseurl }}/podcast/" class="page-link{% if page.url contains '/podcast/' %} current{% endif %}">How to Fire Your Boss</a>
+	    <a href="{{ site.baseurl }}/graphics/" class="page-link{% if page.url contains '/graphics/' %} current{% endif %}">Graphics</a>
           </div>
         </div>
 	<a href="{{ site.baseurl }}/gdc/" class="page-link{% if page.url contains '/gdc/' %} current{% endif %}">GDC</a>
@@ -31,6 +33,8 @@
           <option value="{{ site.baseurl }}/gmb/" {% if page.url contains '/gmb/' %}selected{% endif %}>General Membership Branch</option>
           <option value="{{ site.baseurl }}/safer-space/" {% if page.url contains '/safer-space/' %}selected{% endif %}>Safer Space Policy</option>
 	  <option value="{{ site.baseurl }}/allies/" {% if page.url contains '/allies/' %}selected{% endif %}>Friends & Allies</option>
+	  <option value="{{ site.baseurl }}/podcast/" {% if page.url contains '/podcast/' %}selected{% endif %}>How to Fire Your Boss</option>
+	  <option value="{{ site.baseurl }}/graphics/" {% if page.url contains '/graphics/' %}selected{% endif %}>Graphics</option>
         </optgroup>
 	<option value="{{ site.baseurl }}/gdc/" {% if page.url contains '/gdc/' %}selected{% endif %}>GDC</option>
         <option value="{{ site.baseurl }}/news/" {% if page.url contains '/news/' %}selected{% endif %}>News</option>
