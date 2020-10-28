@@ -8,6 +8,6 @@ heading: true
 <h3 style="text-align:center;font-weight:700;font-size:25px;"><em>Friends and Allies of the Maple City GMB</em></h3><br>
 
 <img src="{{ site.baseurl }}/assets/idocwatch.png" style="float:right;max-width:400px;margin-bottom:10px;margin-left:10px;" class="about-image" alt="IDOCWatch">
-<h2><a href="https://idocwatch.org">IDOCWatch</a></h2> 
+<h2><a href="idocwatch.org">IDOCWatch</a></h2> 
 <br>
 
